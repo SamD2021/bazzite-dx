@@ -13,7 +13,8 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 rpm-ostree install screen \
-  zsh
+  zsh \
+  cosmic-desktop
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
