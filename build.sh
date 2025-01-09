@@ -15,7 +15,8 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree install screen \
   zsh \
   cosmic-desktop \
-  kitty
+  kitty \
+  virt-manager
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
