@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Cosmic
+Comment=This session logs you into the Cosmic desktop environment
+Exec=/usr/bin/cosmic-session
+TryExec=/usr/bin/cosmic-session
+Icon=
+Type=Application
+DesktopNames=Cosmic
