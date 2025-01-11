@@ -51,6 +51,11 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 RUN curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-$(rpm -E %fedora)/ryanabx-cosmic-epoch-fedora-$(rpm -E %fedora).repo \
   && ostree container commit
 
+COPY cosmic-session.desktop /usr/share/xsessions/
+COPY cosmic-steamos-oneshot.desktop /usr/share/xsessions/
+COPY startcosmic-session-oneshot /usr/bin/
+COPY steamos-session-select /usr/bin/
+
 COPY build.sh /tmp/build.sh
 
 
