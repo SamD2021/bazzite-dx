@@ -52,6 +52,7 @@ RUN curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfra
   && ostree container commit
 
 COPY build.sh /tmp/build.sh
+COPY stop-gamemode /usr/bin/
 
 
 RUN mkdir -p /var/lib/alternatives && \
