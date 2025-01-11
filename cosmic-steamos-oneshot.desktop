@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Cosmic (One Shot)
+Comment=Launch Cosmic for a one-time session
+Exec=/usr/bin/startcosmic-session-oneshot
+TryExec=/usr/bin/startcosmic-session-oneshot
+Type=Application
+DesktopNames=Cosmic
