@@ -26,7 +26,10 @@ rpm-ostree install screen \
   fuzzel \
   rofi \
   hyprcursor \
-  hyprlock
+  hyprlock \
+  blueman \
+  pasystray \
+  network-manager-applet
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
