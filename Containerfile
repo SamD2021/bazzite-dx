@@ -54,7 +54,7 @@ RUN curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfra
 
 COPY build.sh /tmp/build.sh
 COPY stop-gamemode /usr/bin/
-
+COPY hyprland-uwsm.desktop /usr/share/wayland-sessions/
 
 RUN mkdir -p /var/lib/alternatives && \
   /tmp/build.sh && \
