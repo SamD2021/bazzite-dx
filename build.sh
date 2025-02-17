@@ -17,7 +17,8 @@ rpm-ostree install screen \
   cosmic-desktop \
   kitty \
   virt-manager \
-  neovim
+  neovim \
+  nmap
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
