@@ -25,7 +25,8 @@ rpm-ostree install screen \
   waybar \
   fuzzel \
   rofi \
-  hyprcursor
+  hyprcursor \
+  hyprlock
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
