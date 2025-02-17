@@ -22,7 +22,10 @@ rpm-ostree install screen \
   hyprland \
   hypridle \
   hyprpaper \
-  waybar
+  waybar \
+  fuzzel \
+  rofi \
+  hyprcursor
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
