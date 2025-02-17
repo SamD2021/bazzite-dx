@@ -18,7 +18,10 @@ rpm-ostree install screen \
   kitty \
   virt-manager \
   neovim \
-  nmap
+  nmap \
+  hyprland \
+  hypridle \
+  hyprpaper
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
