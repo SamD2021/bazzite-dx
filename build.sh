@@ -21,7 +21,8 @@ rpm-ostree install screen \
   nmap \
   hyprland \
   hypridle \
-  hyprpaper
+  hyprpaper \
+  waybar
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
