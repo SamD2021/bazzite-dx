@@ -19,14 +19,6 @@ rpm-ostree install screen \
   virt-manager \
   neovim \
   nmap \
-  hyprland \
-  hypridle \
-  hyprpaper \
-  waybar \
-  fuzzel \
-  rofi \
-  hyprcursor \
-  hyprlock \
   blueman \
   pasystray \
   network-manager-applet
