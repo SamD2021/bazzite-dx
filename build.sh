@@ -21,8 +21,8 @@ rpm-ostree install screen \
   nmap \
   blueman \
   pasystray \
-  network-manager-applet
-
+  network-manager-applet\
+  podman-machine
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
