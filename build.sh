@@ -21,6 +21,7 @@ rpm-ostree install screen \
   nmap \
   blueman \
   pasystray \
+  Cider \
   network-manager-applet
 
 # this would install a package from rpmfusion

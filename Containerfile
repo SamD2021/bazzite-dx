@@ -58,6 +58,21 @@ RUN curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfra
 COPY build.sh /tmp/build.sh
 COPY stop-gamemode /usr/bin/
 COPY hyprland-uwsm.desktop /usr/share/wayland-sessions/
+RUN <<EORUN
+set -xeuo pipefail
+# Currently just installing these two things is enough for e.g. podman-bootc run.
+rpm --import https://repo.cider.sh/RPM-GPG-KEY
+tee /etc/yum.repos.d/cider.repo << 'EOF'
+[cidercollective]
+name=Cider Collective Repository
+baseurl=https://repo.cider.sh/rpm/RPMS
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.cider.sh/RPM-GPG-KEY
+EOF
+dnf makecache
+EORUN
+
 
 RUN mkdir -p /var/lib/alternatives && \
   /tmp/build.sh && \
