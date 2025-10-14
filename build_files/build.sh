@@ -40,6 +40,7 @@ dnf5 install -y screen \
   pasystray \
   network-manager-applet \
   pcsc-lite \
+  pcsc-lite-ccid \
   Cider
 
 # Use a COPR Example:
