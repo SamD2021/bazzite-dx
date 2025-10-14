@@ -35,7 +35,8 @@
             # Add any you need here
             packages = with pkgs; [
               cosign
-              jj
+              jujutsu
+              act
             ];
 
             # Set any environment variables for your dev shell
