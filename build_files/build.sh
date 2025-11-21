@@ -41,7 +41,8 @@ dnf5 install -y screen \
   network-manager-applet \
   pcsc-lite \
   Cider \
-  openvswitch
+  openvswitch \
+  swtpm
 
 # Use a COPR Example:
 #
