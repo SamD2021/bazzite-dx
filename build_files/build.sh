@@ -40,7 +40,8 @@ dnf5 install -y screen \
   pasystray \
   network-manager-applet \
   pcsc-lite \
-  Cider
+  Cider \
+  openvswitch
 
 # Use a COPR Example:
 #
