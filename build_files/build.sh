@@ -42,7 +42,7 @@ dnf5 install -y screen \
   pcsc-lite \
   Cider \
   openvswitch \
-  swtpm swtpm-libs swtpm-selinux
+  swtpm swtpm-libs swtpm-selinux libtpms swtpm-tools
 
 # Use a COPR Example:
 #
