@@ -7,8 +7,7 @@ echo -e '[composefs]\nenabled = yes\n\n[root]\ntransient = true' >/usr/lib/ostre
 
 mkdir -p /nix && ostree container commit
 
-curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo "https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-$(rpm -E %fedora)/ryanabx-cosmic-epoch-fedora-$(rpm -E %fedora).repo" &&
-  curl -Lo /etc/yum.repos.d/_copr_sneexy-zen-browser.repo "https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-$(rpm -E %fedora)/sneexy-zen-browsder-fedora-$(rpm -E %fedora).repo" &&
+curl -Lo /etc/yum.repos.d/_copr_sneexy-zen-browser.repo "https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-$(rpm -E %fedora)/sneexy-zen-browsder-fedora-$(rpm -E %fedora).repo" &&
   ostree container commit
 
 rpm --import https://repo.cider.sh/RPM-GPG-KEY &&
@@ -31,7 +30,6 @@ EOF
 # this installs a package from fedora repos
 dnf5 install -y screen \
   zsh \
-  cosmic-desktop \
   kitty \
   virt-manager \
   neovim \
@@ -54,4 +52,3 @@ dnf5 install -y screen \
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl disable sddm && systemctl enable cosmic-greeter && ostree container commit

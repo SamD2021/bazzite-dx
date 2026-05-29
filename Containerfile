@@ -3,7 +3,9 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite-dx-nvidia:stable
+FROM ghcr.io/bazzirco/bazzirco-dx-nvidia
+
+
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
