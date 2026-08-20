@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/bazzirco/bazzirco-dx-nvidia
+FROM ghcr.io/bazzirco/bazzirco-dx
 
 
 
