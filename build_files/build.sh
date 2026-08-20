@@ -7,9 +7,6 @@ echo -e '[composefs]\nenabled = yes\n\n[root]\ntransient = true' >/usr/lib/ostre
 
 mkdir -p /nix && ostree container commit
 
-curl -Lo /etc/yum.repos.d/_copr_sneexy-zen-browser.repo "https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-$(rpm -E %fedora)/sneexy-zen-browsder-fedora-$(rpm -E %fedora).repo" &&
-  ostree container commit
-
 rpm --import https://repo.cider.sh/RPM-GPG-KEY &&
   cat >/etc/yum.repos.d/cider.repo <<'EOF'
 [cidercollective]
@@ -28,19 +25,9 @@ EOF
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y screen \
-  zsh \
-  kitty \
-  virt-manager \
-  neovim \
-  nmap \
-  blueman \
-  pasystray \
-  network-manager-applet \
-  pcsc-lite \
+dnf5 install -y \
   Cider \
-  openvswitch \
-  swtpm swtpm-libs swtpm-selinux libtpms swtpm-tools
+  openvswitch
 
 # Use a COPR Example:
 #
